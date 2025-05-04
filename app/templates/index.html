@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>System Health Report</title>
+</head>
+
+<body>
+    <h1>System Health Check</h1>
+    <form method="POST">
+        <button type="submit">Generate Report</button>
+    </form>
+
+    {% if result %}
+    <h2>System Health Report:</h2>
+    <pre>{{ result }}</pre>
+    {% endif %}
+</body>
+
+</html>
