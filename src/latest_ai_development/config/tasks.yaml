@@ -1,0 +1,15 @@
+system_check_task:
+  description: >
+    Gather system metrics including CPU usage, memory status, and disk space.
+    Use built-in tools like psutil to collect this data.
+  expected_output: >
+    Dictionary of system stats with CPU, memory, and disk usage in human-readable format.
+  agent: system_monitor
+
+system_report_task:
+  description: >
+    Generate a markdown report summarizing system health using the collected stats.
+    Highlight any metric that exceeds 85% usage as critical.
+  expected_output: >
+    Markdown-formatted report with system health summary and warnings if applicable.
+  agent: system_monitor
