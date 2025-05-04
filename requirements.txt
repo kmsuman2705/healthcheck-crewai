@@ -1,0 +1,8 @@
+crewai
+flask  # If using Flask for web applications
+pandas
+numpy
+# Any other dependencies you need
+
+psutil
+
